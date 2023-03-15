@@ -10,7 +10,6 @@ tmpList.push("Elena");
 waitingList = tmpList.concat(waitingList);
 
 console.log(waitingList);
-console.log("****************************");
 
 console.log("Exercise #2");
 for (let i = 1; i <= 5; i++) {
@@ -20,7 +19,6 @@ for (let i = 1; i <= 5; i++) {
   }
   console.log(stars);
 }
-console.log("****************************");
 
 console.log("Exercise #3");
 console.log("#3.1");
@@ -36,8 +34,8 @@ for (let i = 1; i <= 100; i++) {
   if (i % 2 !== 0) console.log(i);
 }
 console.log("#3.3");
-const printThroughN = () => {
-  let n = prompt("Enter n: ");
+const printThroughN = (n) => {
+  //   let n = prompt("Enter n: ");
   let i = 1;
   let textResult = "";
   while (i <= n) {
@@ -46,7 +44,7 @@ const printThroughN = () => {
   }
   console.log(textResult);
 };
-printThroughN();
+printThroughN(prompt("Enter n: "));
 
 console.log("#3.4");
 const sumOfNPositive = (n) => {
